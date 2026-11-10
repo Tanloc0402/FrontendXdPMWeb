@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website dự án của tôi</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #18312b;
+      background: #f5f8f5;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      box-shadow: 0 2px 12px #18312b12;
+    }
+
+    .logo {
+      color: #16805d;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin-left: 24px;
+      color: #33443e;
+      text-decoration: none;
+    }
+
+    .hero {
+      min-height: 470px;
+      padding: 80px 8%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(120deg, #e4f5eb, #f7f7ed);
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .tag {
+      color: #16805d;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      margin: 16px 0;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      max-width: 560px;
+      color: #5c6d65;
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 26px;
+      padding: 13px 22px;
+      border-radius: 8px;
+      color: white;
+      background: #16805d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 64px 8%;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 12px;
+      font-size: 32px;
+    }
+
+    .section-intro {
+      color: #68766f;
+      margin-bottom: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: left;
+    }
+
+    .card {
+      padding: 26px;
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 8px 25px #18312b0c;
+    }
+
+    .card .icon {
+      font-size: 32px;
+    }
+
+    .card h3 {
+      margin: 12px 0 8px;
+    }
+
+    .card p {
+      color: #68766f;
+    }
+
+    footer {
+      padding: 22px 8%;
+      color: #dce9e2;
+      background: #18312b;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">DỰ ÁN CỦA TÔI</div>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#about">Giới thiệu</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="tag">Website giới thiệu dự án</div>
+        <h1>Một trải nghiệm mới đang được xây dựng</h1>
+        <p>
+          Đây là trang giới thiệu dự án của chúng tôi. Website hướng đến
+          trải nghiệm đơn giản, thuận tiện và thân thiện với người dùng.
+        </p>
+        <a class="button" href="#about">Tìm hiểu thêm</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>Về dự án</h2>
+      <p class="section-intro">
+        Một số nội dung chính của website
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">✨</div>
+          <h3>Giao diện thân thiện</h3>
+          <p>Bố cục rõ ràng, dễ sử dụng trên máy tính và điện thoại.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">⚡</div>
+          <h3>Hoạt động nhanh</h3>
+          <p>Thông tin được trình bày gọn gàng để người dùng dễ theo dõi.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🌱</div>
+          <h3>Đang phát triển</h3>
+          <p>Các chức năng của dự án sẽ tiếp tục được bổ sung trong thời gian tới.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    © 2026 Dự án của tôi. Trang web đang trong quá trình phát triển.
+  </footer>
+</body>
+</html>
